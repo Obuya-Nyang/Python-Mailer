@@ -10,7 +10,7 @@ Automate sending mails using smtplib and email libraries in python
 # Create aws lambda function and run in terraform
 enter zip file in terraform directory when prompted for zip-file name \
 create variables.tf file to reference variables in main.tf 
-+ cd terraform_lambda/terraform && mkdir variables.tf 
++ cd terraform_lambda/terraform && touch variables.tf (for windows use; echo > variables.tf)
 + terraform init
 + terraform fmt
 + terraform validate
