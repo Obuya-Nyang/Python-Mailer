@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-def lambda_handler(event, context):
+def lambda_handler(*args, **kwargs):
     myurl = os.getenv("MY_URL")
     myuser = os.getenv("EMAIL_ADDRESS")
     passwd = os.getenv("EMAIL_PASSWORD")
@@ -43,5 +43,5 @@ def lambda_handler(event, context):
         print("Encountered an exception during execution!")
         raise err
 
-# if __name__ == "__main__":
-#     lambda_handler()
+if __name__ == "__main__":
+    lambda_handler()
