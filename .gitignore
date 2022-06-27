@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# any file beginning with .
+*._*
+
+# terraform files
+.terraform
+.terraform.lock.hcl
+terraform.tfstate.backup
+variables.tf
