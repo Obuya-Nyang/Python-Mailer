@@ -44,4 +44,4 @@ def lambda_handler(event, context):
         raise err
 
 # if __name__ == "__main__":
-#     mail()
+#     lambda_handler()
